@@ -15,7 +15,7 @@ export default function Apartments() {
           <div>
             <p className="eyebrow">Apartamentos</p>
             <h2 className="h2">
-              Três casas, <em>cada uma diferente</em>
+              Duas casas, <em>cada uma diferente</em>
             </h2>
           </div>
           <div className="tabs" role="tablist">
@@ -65,7 +65,7 @@ function ApartmentDetail({ apt }) {
           </div>
           <div>
             <dt>Quartos</dt>
-            <dd>{apt.bedrooms || 'Estúdio'}</dd>
+            <dd>{apt.bedrooms}</dd>
           </div>
           <div>
             <dt>WC</dt>

@@ -26,7 +26,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="hero__badge">
-        <span className="dot" /> {PROJECT.status} · 3 habitações
+        <span className="dot" /> {PROJECT.status} · 2 habitações
       </div>
     </section>
   )

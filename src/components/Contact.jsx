@@ -4,7 +4,7 @@ import { img, useReveal } from '../hooks.js'
 
 export default function Contact() {
   const ref = useReveal()
-  const [form, setForm] = useState({ nome: '', email: '', telefone: '', apt: 'Qualquer um', mensagem: '' })
+  const [form, setForm] = useState({ nome: '', email: '', telefone: '', apt: 'Ambos', mensagem: '' })
   const [sent, setSent] = useState(false)
 
   // Pré-seleciona o apartamento quando se clica em "Tenho interesse"
@@ -95,7 +95,7 @@ export default function Contact() {
               <label>
                 Apartamento de interesse
                 <select value={form.apt} onChange={set('apt')}>
-                  <option>Qualquer um</option>
+                  <option>Ambos</option>
                   {APARTMENTS.map((a) => (
                     <option key={a.id}>{`${a.name} (${a.typology})`}</option>
                   ))}

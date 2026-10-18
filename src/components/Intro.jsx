@@ -2,9 +2,9 @@ import { PROJECT, TIMELINE } from '../data.js'
 import { img, useReveal } from '../hooks.js'
 
 const STATS = [
-  ['3', 'habitações'],
+  ['2', 'habitações'],
   [PROJECT.totalConstruction, 'de construção'],
-  ['T0 a T3', 'tipologias'],
+  ['3', 'quartos no duplex'],
   ['1', 'terraço na cobertura'],
 ]
 
@@ -24,8 +24,8 @@ export default function Intro() {
             tom cobre vêm da arquitetura tradicional da ilha.
           </p>
           <p>
-            São só três casas: um T2 no piso térreo, um T3 no piso 2 e um T0 no piso 3,
-            junto ao terraço na cobertura. Projeto de {PROJECT.architect}.
+            São só duas casas: um T2 no piso térreo e um T3 duplex nos pisos 2 e 3, com terraço na
+            cobertura. Projeto de {PROJECT.architect}.
           </p>
           <dl className="stats">
             {STATS.map(([v, l]) => (
