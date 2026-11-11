@@ -15,9 +15,6 @@ export default function Footer() {
         </div>
         <div className="footer__meta">
           <p>Arquitetura: {PROJECT.architect}</p>
-          <a className="link" href="/plantas/plantas-projeto.pdf" target="_blank" rel="noreferrer">
-            Descarregar plantas (PDF)
-          </a>
         </div>
       </div>
       <div className="container footer__legal">
